@@ -1,0 +1,10 @@
+{
+  "name": "doguinho_landing_page",
+  "version": "1.0.0",
+  "description": "Landing Page about Doguinho pet's organization",
+  "main": "index.js",
+  "repository": "git@github.com:gabriel3c/Landing-Page-Doguinho-Bootstrap.git",
+  "author": "gabriel3c <gbrei@hotmail.com>",
+  "license": "MIT",
+  "private": false
+}
