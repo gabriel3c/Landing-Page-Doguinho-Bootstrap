@@ -9,10 +9,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url('./../images/street-dogs.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(2px);
 
 }
 
@@ -52,13 +48,26 @@ header{
 
 
 #intro{
-    margin: 30px auto;
-
+    background-image: url('./../images/street-dogs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    height: calc(100vh - 70px);
 }
 
-#intro-title{
+.section-title{
     color: black;
+    padding: 15px ;
 }
+
+#intro div{
+    height: 91%;
+}
+
+#intro h1{
+    font-size: 50px;
+}
+
 .intro-text{
     display: flex;
     flex-direction: column;
@@ -66,9 +75,7 @@ header{
     align-items: center;
     text-align: justify;
     font-size: 22px;
-    color:black;
-    font-weight: bold;
-    margin: 60px 10px;
+    color: white; 
 }
 
 .intro-text p:first-child{
@@ -85,4 +92,94 @@ header{
 }
 
 
-/* Main */
+/* projects */
+
+#projects{
+    background-color: var(--main-bg-color);
+    height: max-content;
+    padding-bottom: 50px;
+}
+
+#projects h1{
+    color: var(--main-text-color);
+
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.carousel-item img{
+    /* width:800px; */
+    height: 500px;
+}
+
+.carousel-caption h5, .carousel-caption p{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;    
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+
+/*contatos */
+
+#contact{
+    background-image: url('https://www.lolipet.com.br/blog/wp-content/uploads/2015/11/shutterstock_259670459.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#contact h1{
+    width: max-content;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}   
+
+.contatos-box{
+    width: 20%;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contato p{
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+svg{
+    height: 40px;
+    width: 40px;
+}
+
+/* footer */
+
+footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+
+}
+footer p{
+    margin:0;
+    align-self: center;
+    color: var(--main-text-color);
+}
